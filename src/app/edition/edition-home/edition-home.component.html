@@ -1,0 +1,46 @@
+<div class="brief-content">
+  <mat-sidenav-container>
+
+    <article class="brief-main-content">
+      <h2>Eine Liste von Briefen</h2>
+      <p style="background-color: #f8b9b7;">Diese Seite muss man sich wie einen Webshop vorstellen. Auf der rechten Seite können Einschränkungen gesetzt
+        werden und die Auswahl der Briefe passt sich entsprechend an.</p>
+
+      <div style="background-color: #f8b9b7">
+        <p>Hier könnte man die unten angezeigten Briefe über die Zeit oder über die Orte visualisieren.</p>
+        <app-edition-visualization [letters]="letters"></app-edition-visualization>
+      </div>
+
+      <mat-progress-bar *ngIf="showProgressBar"></mat-progress-bar>
+
+      <mat-input-container style="background-color: #f8b9b7">
+        <input matInput placeholder="Filtern nach Titel oder Inhalt">
+      </mat-input-container>
+
+      <app-letter-list [letters]="letters"></app-letter-list>
+
+    </article>
+    <mat-sidenav opened mode="side" align="end" style="width:300px">
+      <aside>
+
+        <div style="background-color: #f8b9b7">
+          <h4>Zeit</h4>
+          <p>Einschränkung nach Zeit</p>
+        </div>
+
+        <h4>Orte</h4>
+        <app-filter category="ort"
+                      [selections]="{ort: selectedPlaceIds, pers: selectedPeopleIds}"
+                      [filterList]="places"></app-filter>
+
+        <h4>Personen</h4>
+        <app-filter category="pers"
+                      [selections]="{ort: selectedPlaceIds, pers: selectedPeopleIds}"
+                      [filterList]="people"></app-filter>
+
+      </aside>
+    </mat-sidenav>
+
+  </mat-sidenav-container>
+
+</div>

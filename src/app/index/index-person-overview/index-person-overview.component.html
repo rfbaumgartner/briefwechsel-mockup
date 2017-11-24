@@ -1,0 +1,51 @@
+<div class="brief-content">
+  <mat-sidenav-container>
+
+    <article class="brief-main-content">
+      <h2>Personen der Briefedition</h2>
+
+      <div style="background-color: #f8b9b7">
+        Dynamisch generierte Liste der Personen in der Edition. Die Liste kann nach Namen gefiltert werden.
+        Auf der rechten Seite kann die Auswahl der Personen begrenzt werden.
+        Die Personen auf der Liste können theoretisch auf einer Karte visualisiert werden.
+      </div>
+
+      <mat-input-container style="background-color: #f8b9b7">
+        <input matInput placeholder="Filtern nach Name">
+      </mat-input-container>
+
+      <mat-nav-list>
+        <a mat-list-item [routerLink]="[p.id]" *ngFor="let p of people">
+          {{p.name}}
+        </a>
+      </mat-nav-list>
+    </article>
+    <mat-sidenav opened mode="side" align="end" style="width:300px">
+      <aside>
+
+        <div style="background-color: #f8b9b7">
+          <h4>Lebzeit</h4>
+          <p>von</p>
+          <p>bis</p>
+        </div>
+
+        <div style="background-color: #f8b9b7">
+          <h4>Wohnort</h4>
+          <input>
+          <p>
+            <span style="background-color: gray">Zürich X</span> <span style="background-color: gray;">Brugg X</span>
+          </p>
+        </div>
+
+        <div style="background-color: #f8b9b7">
+          <h4>Korrespondent</h4>
+          <input>
+          <p><i>zeige alle</i></p>
+        </div>
+
+      </aside>
+    </mat-sidenav>
+
+  </mat-sidenav-container>
+
+</div>

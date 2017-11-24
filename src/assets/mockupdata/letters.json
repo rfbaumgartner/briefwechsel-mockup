@@ -1,0 +1,20 @@
+{
+  "letters": [
+    {
+      "id": "brief01",
+      "title": "Anna an Caspar, 1865",
+      "place": "chur",
+      "sender": "anna",
+      "receiver": "caspar",
+      "date": "1865"
+    },
+    {
+      "id": "brief02",
+      "title": "Bernhard an Anna, 1905",
+      "place": "basel",
+      "sender": "bernhard",
+      "receiver": "anna",
+      "date": "1905"
+    }
+  ]
+}

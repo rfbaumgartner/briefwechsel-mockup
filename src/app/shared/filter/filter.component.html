@@ -1,0 +1,40 @@
+<div>
+  <div>
+    <mat-chip-list>
+
+      <ng-container *ngFor="let c of filterList">
+        <mat-chip *ngIf="selections[category].indexOf(c.id) >= 0">
+          <mat-icon (click)="deleteSelection(c.id)"
+                   alt="Ausgewähltes Element entfernen"
+                   style="cursor: pointer">clear</mat-icon>
+          {{c.name}}
+          <a [routerLink]="['/index', category, c.id]"
+             target="_blank"
+             alt="Mehr zu diesem Element in separatem Fenster lesen">
+            <mat-icon>open_in_new</mat-icon>
+          </a>
+        </mat-chip>
+      </ng-container>
+
+    </mat-chip-list>
+  </div>
+  <div>
+    <mat-list dense>
+
+      <ng-container *ngFor="let e of filterList">
+        <mat-list-item *ngIf="selections[category].indexOf(e.id) < 0">
+          <mat-icon (click)="addSelection(e.id)"
+                   alt="Element auswählen"
+                   style="cursor: pointer">add</mat-icon>
+          {{e.name}}
+          <a [routerLink]="['/index', category, e.id]"
+             target="_blank"
+             alt="Mehr zu diesem Element in separatem Fenster lesen">
+            <mat-icon>open_in_new</mat-icon>
+          </a>
+        </mat-list-item>
+      </ng-container>
+
+    </mat-list>
+  </div>
+</div>

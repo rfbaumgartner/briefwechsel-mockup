@@ -1,0 +1,11 @@
+<div class="brief-content">
+
+  <article class="brief-main-content">
+    <h2>Orte der Briefedition</h2>
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="[p.id]" *ngFor="let p of places">
+        {{p.name}}
+      </a>
+    </mat-nav-list>
+  </article>
+</div>

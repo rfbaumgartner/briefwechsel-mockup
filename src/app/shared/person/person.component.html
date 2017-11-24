@@ -1,0 +1,10 @@
+<div class="brief-content">
+
+  <article class="brief-main-content">
+    <h2>{{person.name}}</h2>
+    <p>{{person.lived}}</p>
+    <p>
+      <a [routerLink]="['/briefe']" [queryParams]="{pers: [person.id]}">Briefe von {{person.name}}</a>
+    </p>
+  </article>
+</div>

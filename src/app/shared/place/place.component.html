@@ -1,0 +1,11 @@
+<div class="brief-content">
+
+  <article class="brief-main-content">
+    <h2>{{place.name}}</h2>
+    <p>{{place.desc}}</p>
+    <p>
+      <a [routerLink]="['/briefe']" [queryParams]="{ort: [place.id]}">Briefe von {{place.name}}</a>
+    </p>
+  </article>
+</div>
+

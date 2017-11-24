@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+footer {
+  background-color: olive;
+  color: #dddddd;
+}
+
+header {
+  background-color: olive;
+  color: #dddddd;
+}
+
+.active-nav-item {
+  background-color: white;
+  color: darkorange !important;
+}
+
+.active-sidenav-item {
+  color: darkorange !important;
+}
+
+.brief-subnav {
+  background-color: lightgoldenrodyellow;
+}
+
+h3 {
+  font-size: 120%;
+}
+
+button {
+  padding: 0px !important;
+  line-height: normal !important;
+}
+
+div.mat-card-header-text {
+  margin: 0px;
+  line-height: normal !important;
+}
+
+html, body, mat-sidenav-container, .brief-main-content, .brief-content {
+  margin: 0;
+  width: 100%;
+}
+
+mat-sidenav {
+  width: 200px;
+  padding: 5px;
+  background-color: #fafafa !important;
+}
+
+mat-sidenav a {
+  width: 200px;
+  text-align: left !important;
+}
+
+mat-sidenav input {
+  width: 150px;
+}
+
+.brief-toggle-card mat-card-header button {
+  width: 100%;
+  text-align: left;
+}
+.brief-toggle-card mat-card-header button h3 {
+  display: inline;
+}
+.brief-toggle-card mat-card-header button mat-icon {
+  float: right;
+}
+
+.brief-content-left, .brief-content-right {
+  display: inline-block;
+  max-width: 400px;
+}
+

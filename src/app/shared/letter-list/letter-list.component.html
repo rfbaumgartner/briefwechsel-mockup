@@ -1,0 +1,13 @@
+<mat-list>
+  <mat-list-item *ngFor="let l of letters">
+    <h3 mat-line>{{l.title}}</h3>
+
+    <p mat-line>{{l.date}}, {{l.place.name}}</p>
+
+    <p mat-line>
+      <a [routerLink]="['/briefe/' + l.id]">
+        Brief lesen
+      </a>
+    </p>
+  </mat-list-item>
+</mat-list>

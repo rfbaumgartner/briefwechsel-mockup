@@ -1,0 +1,19 @@
+{
+  "places": [
+    {
+      "name": "Aarau",
+      "id": "aarau",
+      "desc": "Aarau ist der Hauptort des Kantons Aargau."
+    },
+    {
+      "name": "Basel",
+      "id": "basel",
+      "desc": "Basel ist die Hauptstadt des Kantons Basel-Stadt. Die Stadt ist für ihre Lage im Dreiländereck bekannt."
+    },
+    {
+      "name": "Chur",
+      "id": "chur",
+      "desc": "Chur ist der Hauptort von Graubünden. Der romanische Name ist 'Coira'."
+    }
+  ]
+}

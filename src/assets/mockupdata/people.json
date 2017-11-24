@@ -1,0 +1,19 @@
+{
+  "people": [
+    {
+      "name": "Anna",
+      "id": "anna",
+      "lived": "1899-1967"
+    },
+    {
+      "name": "Bernhard",
+      "id": "bernhard",
+      "lived": "1876-1953"
+    },
+    {
+      "name": "Caspar",
+      "id": "caspar",
+      "lived": "1799-1864"
+    }
+  ]
+}
