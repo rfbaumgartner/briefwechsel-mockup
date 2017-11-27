@@ -9,12 +9,13 @@ import { IndexPlaceOverviewComponent } from './index-place-overview/index-place-
 import { IndexPlaceEntryComponent } from './index-place-entry/index-place-entry.component';
 import { IndexPersonEntryComponent } from './index-person-entry/index-person-entry.component';
 import { IndexPersonOverviewComponent } from './index-person-overview/index-person-overview.component';
-import { MatInputModule, MatListModule, MatSidenavModule } from '@angular/material';
+import { MatButtonModule, MatInputModule, MatListModule, MatSidenavModule } from '@angular/material';
 import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
+    MatButtonModule,
     MatInputModule,
     MatListModule,
     MatSidenavModule,

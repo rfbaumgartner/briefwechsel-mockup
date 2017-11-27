@@ -8,7 +8,10 @@ import { SimpleSearchComponent } from './simple-search/simple-search.component';
 import { LetterListComponent } from './letter-list/letter-list.component';
 import { PlaceComponent } from './place/place.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { MatButtonModule, MatChipsModule, MatIconModule, MatInputModule, MatListModule } from '@angular/material';
+import {
+    MatButtonModule, MatChipsModule, MatFormFieldModule, MatIconModule, MatInputModule,
+    MatListModule
+} from '@angular/material';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -16,6 +19,7 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     MatButtonModule,
     MatChipsModule,
+    MatFormFieldModule,
     MatIconModule,
     MatInputModule,
     MatListModule,
