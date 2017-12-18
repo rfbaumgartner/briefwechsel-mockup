@@ -1,18 +1,15 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Place } from './place';
-import { Http } from '@angular/http';
-
-import 'rxjs/add/operator/map';
 
 @Injectable()
 export class PlaceService {
 
-  constructor(private http: Http) { }
+  constructor(private httpClient: HttpClient) { }
 
   getPlaceById(id: string): Place {
     let place = new Place();
-    this.http.get('../../assets/mockupdata/places.json')
-      .map(response => response.json())
+    this.httpClient.get('../../assets/mockupdata/places.json')
       .subscribe((res: any) => {
         for (let i = 0; i < res.places.length; i++) {
           if (res.places[i].id === id) {
@@ -27,8 +24,7 @@ export class PlaceService {
 
   getPlaceList(): Array<Place> {
     let places: Array<Place> = [];
-    this.http.get('../../assets/mockupdata/places.json')
-      .map(response => response.json())
+    this.httpClient.get('../../assets/mockupdata/places.json')
       .subscribe((res: any) => {
         for (let i = 0; i < res.places.length; i++) {
           let place = new Place();

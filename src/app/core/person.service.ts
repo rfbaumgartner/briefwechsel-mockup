@@ -1,18 +1,15 @@
 import { Injectable } from '@angular/core';
 import { Person } from './person';
-import { Http } from '@angular/http';
-
-import 'rxjs/add/operator/map';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class PersonService {
 
-  constructor(private http: Http) { }
+  constructor(private httpClient: HttpClient) { }
 
   getPersonById(id: string): Person {
     let person = new Person();
-    this.http.get('../../assets/mockupdata/people.json')
-      .map(response => response.json())
+    this.httpClient.get('../../assets/mockupdata/people.json')
       .subscribe((res: any) => {
         for (let i = 0; i < res.people.length; i++) {
           if (res.people[i].id === id) {
@@ -27,8 +24,7 @@ export class PersonService {
 
   getPersonList(): Array<Person> {
     let people: Array<Person> = [];
-    this.http.get('../../assets/mockupdata/people.json')
-      .map(response => response.json())
+    this.httpClient.get('../../assets/mockupdata/people.json')
       .subscribe((res: any) => {
         for (let i = 0; i < res.people.length; i++) {
           let person = new Person();

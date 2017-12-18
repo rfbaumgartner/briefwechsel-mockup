@@ -12,6 +12,7 @@ import { IndexModule } from './index/index.module';
 import { EditionModule } from './edition/edition.module';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     HomeModule,
     IndexModule,
-    HttpModule,
+    HttpClientModule,
     RouterModule.forRoot([
       { path: '**', component: AppComponent }
     ]),

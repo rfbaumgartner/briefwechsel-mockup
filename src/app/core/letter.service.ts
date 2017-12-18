@@ -1,20 +1,17 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { PersonService } from './person.service';
 import { PlaceService } from './place.service';
 import { Letter } from './letter';
 
-import 'rxjs/add/operator/map';
-
 @Injectable()
 export class LetterService {
 
-  constructor(private http: Http, private personService: PersonService, private placeService: PlaceService) {}
+  constructor(private httpClient: HttpClient, private personService: PersonService, private placeService: PlaceService) {}
 
   getLetterById(id: string): Letter {
     let letter = new Letter();
-    this.http.get('../../assets/mockupdata/letters.json')
-      .map(response => response.json())
+    this.httpClient.get('../../assets/mockupdata/letters.json')
       .subscribe((res: any) => {
         for (let i = 0; i < res.letters.length; i++) {
           if (res.letters[i].id === id) {
@@ -32,8 +29,7 @@ export class LetterService {
 
   getLetterList(): Array<Letter> {
     let letters: Array<Letter> = [];
-    this.http.get('../../assets/mockupdata/letters.json')
-      .map(response => response.json())
+    this.httpClient.get('../../assets/mockupdata/letters.json')
       .subscribe((res: any) => {
         for (let i = 0; i < res.letters.length; i++) {
           let letter = new Letter();
@@ -55,8 +51,7 @@ export class LetterService {
     let selectedPlaces = selections.get('ort');
     let selectedPeople = selections.get('pers');
 
-    this.http.get('../../assets/mockupdata/letters.json')
-      .map(response => response.json())
+    this.httpClient.get('../../assets/mockupdata/letters.json')
       .subscribe((res: any) => {
         for (let i = 0; i < res.letters.length; i++) {
 
