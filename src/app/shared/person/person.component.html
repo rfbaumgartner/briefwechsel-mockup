@@ -4,7 +4,11 @@
     <h2>{{person.name}}</h2>
     <p>{{person.lived}}</p>
     <p>
-      <a [routerLink]="['/briefe']" [queryParams]="{pers: [person.id]}">Briefe von {{person.name}}</a>
+      <a [routerLink]="['/briefe']"
+         [queryParams]="{pers: [person.id]}">
+        <ng-container i18n="person page|Link to letters from this person@@person-letters-from">Briefe von</ng-container>
+        {{person.name}}
+      </a>
     </p>
   </article>
 </div>

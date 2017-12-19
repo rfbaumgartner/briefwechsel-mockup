@@ -2,7 +2,7 @@
   <mat-sidenav-container>
 
     <article class="brief-main-content">
-      <h2>Eine Liste von Briefen</h2>
+      <h2 i18n="letter list|Title for the list of letters@@letter-list-title">Eine Liste von Briefen</h2>
       <p style="background-color: #f8b9b7;">Diese Seite muss man sich wie einen Webshop vorstellen. Auf der rechten Seite können Einschränkungen gesetzt
         werden und die Auswahl der Briefe passt sich entsprechend an.</p>
 
@@ -24,16 +24,16 @@
       <aside>
 
         <div style="background-color: #f8b9b7">
-          <h4>Zeit</h4>
+          <h4 i18n="letter list|Title for time filter@@letter-list-time">Zeit</h4>
           <p>Einschränkung nach Zeit</p>
         </div>
 
-        <h4>Orte</h4>
+        <h4 i18n="letter list|Title for place filter@@letter-list-places">Orte</h4>
         <app-filter category="ort"
                       [selections]="{ort: selectedPlaceIds, pers: selectedPeopleIds}"
                       [filterList]="places"></app-filter>
 
-        <h4>Personen</h4>
+        <h4 i18n="letter list|Title for person filter@@letter-list-people">Personen</h4>
         <app-filter category="pers"
                       [selections]="{ort: selectedPlaceIds, pers: selectedPeopleIds}"
                       [filterList]="people"></app-filter>

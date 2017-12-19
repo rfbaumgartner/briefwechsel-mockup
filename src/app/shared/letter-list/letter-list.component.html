@@ -5,7 +5,7 @@
     <p mat-line>{{l.date}}, {{l.place.name}}</p>
 
     <p mat-line>
-      <a [routerLink]="['/briefe/' + l.id]">
+      <a [routerLink]="['/briefe/' + l.id]" i18n="letter list|Read this letter@@read-letter">
         Brief lesen
       </a>
     </p>

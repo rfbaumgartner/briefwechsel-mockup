@@ -5,12 +5,14 @@
       <ng-container *ngFor="let c of filterList">
         <mat-chip *ngIf="selections[category].indexOf(c.id) >= 0">
           <mat-icon (click)="deleteSelection(c.id)"
-                   alt="Ausgewähltes Element entfernen"
-                   style="cursor: pointer">clear</mat-icon>
+                    style="cursor: pointer"
+                    alt="Ausgewähltes Element entfernen"
+                    i18n-alt="alternative text|Remove this element from selection@@remove-from-selections">clear</mat-icon>
           {{c.name}}
           <a [routerLink]="['/index', category, c.id]"
              target="_blank"
-             alt="Mehr zu diesem Element in separatem Fenster lesen">
+             alt="Mehr zu diesem Element in separatem Fenster lesen"
+             i18n-alt="alternative text|Open this element in new window/tab@@filter-new-tab1">
             <mat-icon>open_in_new</mat-icon>
           </a>
         </mat-chip>
@@ -24,12 +26,14 @@
       <ng-container *ngFor="let e of filterList">
         <mat-list-item *ngIf="selections[category].indexOf(e.id) < 0">
           <mat-icon (click)="addSelection(e.id)"
-                   alt="Element auswählen"
-                   style="cursor: pointer">add</mat-icon>
+                    style="cursor: pointer"
+                    alt="Element auswählen"
+                    i18n-alt="alternative text|Restrict content in main view to this specific element@@add-to-selections">add</mat-icon>
           {{e.name}}
           <a [routerLink]="['/index', category, e.id]"
              target="_blank"
-             alt="Mehr zu diesem Element in separatem Fenster lesen">
+             alt="Mehr zu diesem Element in separatem Fenster lesen"
+             i18n-alt="alternative text|Open this element in new window/tab@@filter-new-tab">
             <mat-icon>open_in_new</mat-icon>
           </a>
         </mat-list-item>

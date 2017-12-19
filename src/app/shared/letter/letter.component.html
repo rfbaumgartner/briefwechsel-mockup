@@ -5,15 +5,18 @@
     <p>{{letter.date}}</p>
 
     <p *ngIf="letter.sender">
-      Absender: <a [routerLink]="['/index/pers/' + letter.sender.id]">{{letter.sender.name}}</a>
+      <label i18n="letter view|Sender of a letter@@letter-sender">Absender:</label>
+      <a [routerLink]="['/index/pers/' + letter.sender.id]">{{letter.sender.name}}</a>
     </p>
 
     <p *ngIf="letter.receiver">
-      Empfänger: <a [routerLink]="['/index/pers/' + letter.receiver.id]">{{letter.sender.name}}</a>
+      <label i18n="letter view|Receiver of a letter@@letter-receiver">Empfänger:</label>
+      <a [routerLink]="['/index/pers/' + letter.receiver.id]">{{letter.sender.name}}</a>
     </p>
 
     <p *ngIf="letter.place">
-      Absendeort: <a [routerLink]="['/index/ort/' + letter.place.id]">{{letter.place.name}}</a>
+      <label i18n="letter view|Place where a letter has been sent from@@letter-place">Absendeort:</label>
+      <a [routerLink]="['/index/ort/' + letter.place.id]">{{letter.place.name}}</a>
     </p>
 
     <p>

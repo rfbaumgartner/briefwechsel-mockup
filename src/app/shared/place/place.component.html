@@ -4,7 +4,11 @@
     <h2>{{place.name}}</h2>
     <p>{{place.desc}}</p>
     <p>
-      <a [routerLink]="['/briefe']" [queryParams]="{ort: [place.id]}">Briefe von {{place.name}}</a>
+      <a [routerLink]="['/briefe']"
+         [queryParams]="{ort: [place.id]}">
+        <ng-container i18n="place description page|Link to all letters with this place@@place-letters-with">Briefe von</ng-container>
+        {{place.name}}
+      </a>
     </p>
   </article>
 </div>
