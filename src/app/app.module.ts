@@ -2,6 +2,8 @@ import { LOCALE_ID, NgModule } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localeDeCh from '@angular/common/locales/de-CH';
 import localeFrCh from '@angular/common/locales/fr-CH';
+import localeItCh from '@angular/common/locales/it-CH';
+import localeEn from '@angular/common/locales/en';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -18,6 +20,8 @@ import { SharedModule } from './shared/shared.module';
 
 registerLocaleData(localeDeCh, 'de-CH');
 registerLocaleData(localeFrCh, 'fr-CH');
+registerLocaleData(localeItCh, 'it-CH');
+registerLocaleData(localeEn, 'en');
 
 @NgModule({
   declarations: [

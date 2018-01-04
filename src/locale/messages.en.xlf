@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="remove-from-selections" datatype="html">
+        <source>Ausgewähltes Element entfernen</source>
+        <target>Remove this element</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/filter/filter.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">Remove this element from selection</note>
+        <note priority="1" from="meaning">alternative text</note>
+      </trans-unit>
+      <trans-unit id="filter-new-tab1" datatype="html">
+        <source>Mehr zu diesem Element in separatem Fenster lesen</source>
+        <target>Read more about this element in separate window</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/filter/filter.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">Open this element in new window/tab</note>
+        <note priority="1" from="meaning">alternative text</note>
+      </trans-unit>
+      <trans-unit id="add-to-selections" datatype="html">
+        <source>Element auswählen</source>
+        <target>Select</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/filter/filter.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">Restrict content in main view to this specific element</note>
+        <note priority="1" from="meaning">alternative text</note>
+      </trans-unit>
+      <trans-unit id="filter-new-tab" datatype="html">
+        <source>Mehr zu diesem Element in separatem Fenster lesen</source>
+        <target>Read more about this element in separate window</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/filter/filter.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">Open this element in new window/tab</note>
+        <note priority="1" from="meaning">alternative text</note>
+      </trans-unit>
+      <trans-unit id="letter-sender" datatype="html">
+        <source>Absender:</source>
+        <target>Sender:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/letter/letter.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Sender of a letter</note>
+        <note priority="1" from="meaning">letter view</note>
+      </trans-unit>
+      <trans-unit id="letter-receiver" datatype="html">
+        <source>Empfänger:</source>
+        <target>Receiver:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/letter/letter.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Receiver of a letter</note>
+        <note priority="1" from="meaning">letter view</note>
+      </trans-unit>
+      <trans-unit id="letter-place" datatype="html">
+        <source>Absendeort:</source>
+        <target>Place:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/letter/letter.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">Place where a letter has been sent from</note>
+        <note priority="1" from="meaning">letter view</note>
+      </trans-unit>
+      <trans-unit id="nav-letters" datatype="html">
+        <source>
+    Briefe
+  </source>
+  <target>Letters</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">Letter page with filters</note>
+        <note priority="1" from="meaning">navigation</note>
+      </trans-unit>
+      <trans-unit id="nav-index" datatype="html">
+        <source>
+    Index
+  </source>
+  <target>Index</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Index page</note>
+        <note priority="1" from="meaning">navigation</note>
+      </trans-unit>
+      <trans-unit id="nav-search" datatype="html">
+        <source>
+    Suche
+  </source>
+  <target>Search</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Fulltext search page</note>
+        <note priority="1" from="meaning">navigation</note>
+      </trans-unit>
+      <trans-unit id="nav-about" datatype="html">
+        <source>
+    About
+  </source>
+  <target>About</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">About the project</note>
+        <note priority="1" from="meaning">navigation</note>
+      </trans-unit>
+      <trans-unit id="person-letters-from" datatype="html">
+        <source>Briefe von</source>
+        <target>Letters from</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/person/person.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">Link to letters from this person</note>
+        <note priority="1" from="meaning">person page</note>
+      </trans-unit>
+      <trans-unit id="search-line" datatype="html">
+        <source>Search</source>
+        <target>Search</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/simple-search/simple-search.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Fulltext search</note>
+        <note priority="1" from="meaning">alternative text</note>
+      </trans-unit>
+      <trans-unit id="read-letter" datatype="html">
+        <source>
+        Brief lesen
+      </source>
+      <target>Read letter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/letter-list/letter-list.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Read this letter</note>
+        <note priority="1" from="meaning">letter list</note>
+      </trans-unit>
+      <trans-unit id="place-letters-with" datatype="html">
+        <source>Briefe von</source>
+        <target>Letter from</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/place/place.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">Link to all letters with this place</note>
+        <note priority="1" from="meaning">place description page</note>
+      </trans-unit>
+      <trans-unit id="not-found" datatype="html">
+        <source>
+  404 - Page not found
+</source>
+<target>404 – Page not found</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/not-found/not-found.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">page not found text</note>
+        <note priority="1" from="meaning">not found</note>
+      </trans-unit>
+      <trans-unit id="004b222ff9ef9dd4771b777950ca1d0e4cd4348a" datatype="html">
+        <source>About</source>
+        <target>About</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about/about/about.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="letter-list-title" datatype="html">
+        <source>Eine Liste von Briefen</source>
+        <target>A list of letters</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/edition/edition-home/edition-home.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">Title for the list of letters</note>
+        <note priority="1" from="meaning">letter list</note>
+      </trans-unit>
+      <trans-unit id="letter-list-time" datatype="html">
+        <source>Zeit</source>
+        <target>Date</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/edition/edition-home/edition-home.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">Title for time filter</note>
+        <note priority="1" from="meaning">letter list</note>
+      </trans-unit>
+      <trans-unit id="letter-list-places" datatype="html">
+        <source>Orte</source>
+        <target>Place</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/edition/edition-home/edition-home.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">Title for place filter</note>
+        <note priority="1" from="meaning">letter list</note>
+      </trans-unit>
+      <trans-unit id="letter-list-people" datatype="html">
+        <source>Personen</source>
+        <target>People</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/edition/edition-home/edition-home.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="description">Title for person filter</note>
+        <note priority="1" from="meaning">letter list</note>
+      </trans-unit>
+      <trans-unit id="index-person" datatype="html">
+        <source>Personen</source>
+        <target>People</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/index/index/index.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Person index</note>
+        <note priority="1" from="meaning">indexnav</note>
+      </trans-unit>
+      <trans-unit id="index-place" datatype="html">
+        <source>Orte</source>
+        <target>Place</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/index/index/index.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">Place index</note>
+        <note priority="1" from="meaning">indexnav</note>
+      </trans-unit>
+      <trans-unit id="1a3787fdbac259a1c402b2288be3dbdb5b80d3e7" datatype="html">
+        <source>Über den Index</source>
+        <target>About this index</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/index/index-home/index-home.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4242c88d7730d9c4fc94f4219ffbc999dfdbf029" datatype="html">
+        <source>
+      Der
+      <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Personenindex<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+      listet die in der Edition vorkommenden Personen.
+    </source>
+    <target><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>The person index<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+      list the people in this ecition.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/index/index-home/index-home.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ff0d4949dc4e24d2bfa9aa218fa7f18227e3acd5" datatype="html">
+        <source>
+      Der
+      <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Ortsindex<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+      umfasst die Absende- und Empfangsorte der Edition und Orte, die im Inhalt erwähnt werden.
+    </source>
+    <target>
+      <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>The place index<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+      lists the places in this edition.
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/index/index-home/index-home.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5baed4370d7fc1f9443db3ebcaf8762a9165e72f" datatype="html">
+        <source>Orte der Briefedition</source>
+        <target>Places of the edition</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/index/index-place-overview/index-place-overview.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="08e056fcaf60ccab5fcd3d4b083e317e18abee18" datatype="html">
+        <source>Personen der Briefedition</source>
+        <target>People of the edition</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/index/index-person-overview/index-person-overview.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d17aee1ddf9fe1c0afe8440e02ef5ab906a69699" datatype="html">
+        <source>Suche</source>
+        <target>Search</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/search/search/search.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
